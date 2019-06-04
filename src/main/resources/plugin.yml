@@ -1,0 +1,14 @@
+name: TreeBroker
+version: ${project.version}
+main: ru.skritt.treebroker.Treebroker
+authors: [Skritt]
+commands:
+  trb:
+    description: Plugin control
+    aliases: [treebroker, treeb]
+    usage: /trb
+permissions:
+  treebroker.use:
+    description: An ability to use this plugin
+  treebroker.commands:
+    description: An ability yo use plugin commands
