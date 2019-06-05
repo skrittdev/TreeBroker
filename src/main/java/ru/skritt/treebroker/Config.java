@@ -21,12 +21,12 @@ public class Config {
     public Config(Treebroker plugin) {
         this.plugin=plugin;
         this.prefix = ChatColor.DARK_GREEN + "[" + plugin.getName() + "] " + ChatColor.GREEN;
-        config = plugin.getConfig();
     }
 
     public void initConfig()
     {
         plugin.reloadConfig();
+        config = plugin.getConfig();
         FileConfigurationOptions opts = config.options();
         config.addDefault(configMaxBlocks, Integer.valueOf(this.maxBlocks));
         config.addDefault(configHandDestroy, false);
